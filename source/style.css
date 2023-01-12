@@ -1,0 +1,66 @@
+/* Add the following CSS to your stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.glossy-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.background-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+  flex: 2;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.gloss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
