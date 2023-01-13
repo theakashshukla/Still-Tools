@@ -7,10 +7,10 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
-
+/* 
 .header__logo {}
 
-.header__title {}
+.header__title {} */
 
 .container {
     background-color: rgb(235, 239, 255);
@@ -47,7 +47,7 @@ a:link {
     color: rgb(32, 32, 32);
 }
 
-.main__card__logo {}
+/* .main__card__logo {} */
 
 .block__title {
     display: flex;
