@@ -1,66 +1,57 @@
-/* Add the following CSS to your stylesheet */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
-
 body {
-  font-family: 'Raleway', sans-serif;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
-.glossy-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+.header {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.background-shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: #fff;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+.header__logo {}
+
+.header__title {}
+
+.container {
+    background-color: rgb(235, 239, 255);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px 10px 10px 10px;
 }
 
-.logo-container {
-  flex: 1;
+.main {
+    display: flex;
+    flex-flow: row wrap;
+}
+a:link {
+    text-decoration: none;
+    color: rgb(255, 87, 87);
+  }
+
+.main__card {
+    flex: 1 150px;
+    border: 2px solid rgb(176, 184, 255);
+    border-radius: 10px;
+    background-color: rgb(179, 203, 255);
+    box-shadow: px 3px 6px rgba(139, 139, 139, 0.87);
+    background-color: rgb(255, 255, 255);
+    margin: 10px 10px 10px;
+    padding: 10px 10px 10px 25px;
 }
 
-.logo {
-  width: 120px;
-  height: auto;
+.main__card:hover {
+    box-shadow: 7px 7px 1px rgb(20, 20, 20);
+    cursor: pointer;
 }
 
-nav {
-  flex: 2;
+.main__card__title {
+    color: rgb(32, 32, 32);
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+.main__card__logo {}
 
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.gloss {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+.block__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
