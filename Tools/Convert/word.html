@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Convert numbers to words using JavaScript</title>
+    <script src="src.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div>
+        <center>
+            <h1>
+                Convert Numbers to Words
+            </h1>
+            <input id="Text1" type="text" placeholder="Enter Digits.." onkeypress="return onlyNumbers(this.value);"
+                onkeyup="NumToWord(this.value,'divDisplayWords');" maxlength="4" />
+
+            <div id="divDisplayWords">
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>

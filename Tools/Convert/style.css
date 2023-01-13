@@ -1,0 +1,33 @@
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: medium;
+    color: rgb(87, 89, 102);
+}
+
+input[type=text] {
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border: hsl(0, 100%, 100%);
+    background-color: rgb(242, 242, 255);
+    outline-color: rgb(143, 143, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#divDisplayWords {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+div{
+    background-color: rgb(220, 222, 245);
+    margin: 20%;
+    padding: 25px;
+    border-radius: 12px;
+}
+

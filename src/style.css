@@ -49,8 +49,12 @@ a:link {
 
 /* .main__card__logo {} */
 
-.block__title {
+.block__title{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.text__center {
+    text-align: center;
 }

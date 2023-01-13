@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Count Numbers of Char & Lines
+    </title>
+    <script src="src.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <center>
+        <h1>
+            Count Total Numbers of Words, Characters and Lines.
+        </h1>
+        <div>
+        <form name="theForm">
+            <!-- <label>
+                Enter a text string
+            </label> -->
+            <textarea name="inStr" placeholder="Enter Paragraph..." class="txtarea" id="texta" rows="5" cols="15"></textarea>
+           
+                <input type="button" class="buttoncal" value="Count Words"
+                    onClick="countWords(document.theForm.inStr.value)" ;>
+                <input type="button" class="buttoncal" name="theButton" value="Clear Results"
+                    onClick='document.theForm.results.value=""' ;>
+            
+            <textarea name="results" class="txtarea" rows=5 cols=90></textarea>
+            <input type="button" class="buttoncal" value="Calculate Characters" onClick="countit(this)">
+            <input type="text" class="inputres" name="displaycount" size="20"></p>
+
+            <br>
+            <button class="buttoncal" onclick="alert(countLines())">Count Lines</button>
+        </form>
+    </div>
+    </center>
+</body>
+
+</html>
