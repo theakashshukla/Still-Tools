@@ -33,7 +33,7 @@ a:link {
     border: 2px solid rgb(176, 184, 255);
     border-radius: 10px;
     box-shadow: px 3px 6px rgba(139, 139, 139, 0.87);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 10px;
     padding: 10px 60px 10px 25px;
 }
