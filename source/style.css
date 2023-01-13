@@ -16,7 +16,7 @@ body {
     background-color: rgb(235, 239, 255);
     border-radius: 5px;
     padding: 30px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
 }
 
 .main {
@@ -34,7 +34,7 @@ a:link {
     border-radius: 10px;
     background-color: rgb(179, 203, 255);
     box-shadow: px 3px 6px rgba(139, 139, 139, 0.87);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin: 10px;
     padding: 10px 60px 10px 25px;
 }
