@@ -35,8 +35,8 @@ a:link {
     background-color: rgb(179, 203, 255);
     box-shadow: px 3px 6px rgba(139, 139, 139, 0.87);
     background-color: rgb(255, 255, 255);
-    margin: 10px 10px 10px;
-    padding: 10px 10px 10px 25px;
+    margin: 10px;
+    padding: 10px 60px 10px 25px;
 }
 
 .main__card:hover {
