@@ -1,16 +1,47 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
 body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
-.header {
-    display: flex;
-    flex-flow: row wrap;
+/*Nav Bar */
+.container__nav{
+    padding: 10px;
 }
-/* 
-.header__logo {}
 
-.header__title {} */
+.nav {
+    flex-flow: row wrap;
+    /* background-color: aliceblue; */
+    border-radius: 20px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nav__logo {
+    margin-left: 30px;
+}
+
+.nav__menu {
+    justify-content: end;
+    gap: 40px;
+    margin-right: 40px;
+}
+.spec__button{
+    color: rgb(50, 61, 70) !important;
+    border-color: rgb(34, 35, 43);
+    border: 2px;
+}
+
+
+.container__header{
+
+}
+.header{
+
+}
 
 .container {
     background-color: rgb(235, 239, 255);
