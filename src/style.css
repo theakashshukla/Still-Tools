@@ -1,48 +1,75 @@
-.flex{
-    display: flex;
-    align-items: center;
+/*-------------------All Tags-------------------------*/
+a:link {
+    text-decoration: none;
+    color: rgb(255, 87, 87);
 }
+
 body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
-/*Nav Bar */
+/*-------------------Generate by Intension-------------------------*/
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text__center {
+    text-align: center;
+}
+/*-------------------Nav Bar-------------------------*/
 .container__nav{
     padding: 10px;
 }
 
-.nav {
+.nav { 
     flex-flow: row wrap;
-    /* background-color: aliceblue; */
-    border-radius: 20px;
+    /* background-color: aliceblue;
+    border-radius: 20px; */
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .nav__logo {
-    margin-left: 30px;
+    margin-left: 40px;
+    justify-items: center;
 }
-
+.logo{
+    margin-top: 12px;
+    width: 80px;
+}
 .nav__menu {
     justify-content: end;
     gap: 40px;
     margin-right: 40px;
 }
 .spec__button{
-    color: rgb(50, 61, 70) !important;
-    border-color: rgb(34, 35, 43);
-    border: 2px;
+    color: rgba(1, 0, 32, 0.637) !important;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 80px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 3px solid rgb(176, 184, 255);
+}
+.spec__button:hover{
+    box-shadow: 2px 2px 6px rgb(164, 166, 255);
 }
 
-
+/*-------------------Header-------------------------*/
 .container__header{
-
+    display: flex;
+    justify-content: center;
 }
 .header{
-
+    text-align: center;
 }
 
+
+/*-------------------Body Tools Comp.-------------------------*/
 .container {
     background-color: rgb(235, 239, 255);
     border-radius: 5px;
@@ -50,27 +77,29 @@ body {
     margin: 10px;
 }
 
+.block__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .main {
     display: flex;
     flex-flow: row wrap;
 }
-a:link {
-    text-decoration: none;
-    color: rgb(255, 87, 87);
-  }
 
 .main__card {
     flex: 1 150px;
     border: 2px solid rgb(176, 184, 255);
     border-radius: 10px;
-    box-shadow: px 3px 6px rgba(139, 139, 139, 0.87);
+    box-shadow: 3px 3px 7px rgba(139, 139, 139, 0.87);
     background-color: rgb(255, 255, 255);
     margin: 10px;
     padding: 10px 60px 10px 25px;
 }
 
 .main__card:hover {
-    box-shadow: 7px 7px 1px rgb(20, 20, 20);
+    box-shadow: 6px 6px 1px rgb(20, 20, 20);
     cursor: pointer;
 }
 
@@ -80,12 +109,3 @@ a:link {
 
 /* .main__card__logo {} */
 
-.block__title{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.text__center {
-    text-align: center;
-}

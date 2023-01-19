@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Count Numbers of Char & Lines
     </title>
@@ -10,31 +13,32 @@
 </head>
 
 <body>
-    <center>
+    <div>
         <h1>
             Count Total Numbers of Words, Characters and Lines.
         </h1>
         <div>
-        <form name="theForm">
-            <!-- <label>
+            <form name="theForm">
+                <!-- <label>
                 Enter a text string
             </label> -->
-            <textarea name="inStr" placeholder="Enter Paragraph..." class="txtarea" id="texta" rows="5" cols="15"></textarea>
-           
+                <textarea name="inStr" placeholder="Enter Paragraph..." class="txtarea" id="texta" rows="5"
+                    cols="15"></textarea>
+
                 <input type="button" class="buttoncal" value="Count Words"
                     onClick="countWords(document.theForm.inStr.value)" ;>
                 <input type="button" class="buttoncal" name="theButton" value="Clear Results"
                     onClick='document.theForm.results.value=""' ;>
-            
-            <textarea name="results" class="txtarea" rows=5 cols=90></textarea>
-            <input type="button" class="buttoncal" value="Calculate Characters" onClick="countit(this)">
-            <input type="text" class="inputres" name="displaycount" size="20"></p>
 
-            <br>
-            <button class="buttoncal" onclick="alert(countLines())">Count Lines</button>
-        </form>
+                <textarea name="results" class="txtarea" rows=5 cols=90></textarea>
+                <input type="button" class="buttoncal" value="Calculate Characters" onClick="countit(this)">
+                <input type="text" class="inputres" name="displaycount" size="20"></p>
+
+                <br>
+                <button class="buttoncal" onclick="alert(countLines())">Count Lines</button>
+            </form>
+        </div>
     </div>
-    </center>
 </body>
 
 </html>
