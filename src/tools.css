@@ -1,0 +1,251 @@
+/* This Design changes in tag */
+body {
+    height: 100%;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(255, 87, 87);
+}
+.cust_width{
+    width: 50%;
+}
+
+/* ---------------Button----------------- */
+.button_normal {
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid rgb(176, 184, 255);
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 10px 15px;
+}
+
+.button_normal:hover {
+    border: 2px solid rgb(173, 173, 173);
+    box-shadow: 3px 3px 1px rgba(36, 36, 36, 0.87);
+    color: #d4deff;
+    background: #7b33ff;
+    cursor: pointer;
+}
+
+.input_option {}
+
+.input_text {
+    padding: 8px;
+    font-size: 16px;
+    color: #00021c;
+    border-style: solid;
+    border-radius: 8px;
+    box-shadow: -50px 0px 0px rgba(66, 66, 66, .0);
+    text-shadow: -50px 0px 0px rgba(66, 66, 66, .0);
+
+    padding: 12px 12px;
+    font-size: 16px;
+    border: 2px solid rgb(187, 194, 255);
+    outline-color: rgb(140, 140, 255);
+    border-radius: 8px;
+    background-color: rgb(241, 241, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_textarea {
+    height: 170px;
+    padding: 12px 12px;
+    font-size: 16px;
+    border: 2px solid rgb(187, 194, 255);
+    outline-color: rgb(140, 140, 255);
+    border-radius: 8px;
+    background-color: rgb(241, 241, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_textarea:hover {
+    box-shadow: 6px 6px 1px rgb(44, 44, 44);
+}
+
+/*-------------------Testing-------------------------*/
+
+/* .inputres,
+.txtarea {
+    width: 100%;
+    margin: 20px;
+    padding: 10px 10px;
+    border: hsl(0, 100%, 100%);
+    background-color: rgb(242, 242, 255);
+    outline-color: #666bff;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+/* .txtarea{
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border: hsl(0, 100%, 100%);
+    background-color: rgb(242, 242, 255);
+    outline-color: rgb(143, 143, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+/* .txtarea {
+    background-color: #222c8b;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+
+/*-------------------Generate by Intension-------------------------*/
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.text__center {
+    text-align: center;
+}
+
+/*-------------------Nav Bar-------------------------*/
+.space {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.nav {
+    flex-flow: row wrap;
+    /* background-color: aliceblue;
+    border-radius: 20px; */
+    justify-content: space-between;
+}
+
+.nav__logo {
+    margin-left: 40px;
+    justify-items: center;
+}
+
+.logo {
+    margin-top: 12px;
+    width: 80px;
+}
+
+.nav__menu {
+    justify-content: end;
+    gap: 40px;
+    margin-right: 40px;
+}
+
+
+/*-------------------Header-------------------------*/
+
+/* .container__header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+} */
+
+/*-------------------Body Tools Comp.-------------------------*/
+.container {
+    background-color: rgb(235, 239, 255);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.block__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 22px;
+}
+
+.main__card {
+    flex: 1 150px;
+    border: 2px solid rgb(176, 184, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(139, 139, 139, 0.87);
+    background-color: rgb(255, 255, 255);
+    padding: 10px 60px 10px 25px;
+
+}
+
+.main__card:hover {
+    box-shadow: 6px 6px 1px rgb(20, 20, 20);
+    cursor: pointer;
+}
+
+.main__card__title {
+    color: rgb(32, 32, 32);
+}
+
+/* .main__card__logo {} */
+
+
+.flex-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 15px;
+}
+
+.flex-items:nth-child(1) {
+    
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+} 
+
+.flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    order: 0;
+}
