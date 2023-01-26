@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/tools.css" rel="stylesheet" type="text/css">
+  <title>Base64</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="block__title">
+      <h1>Base64 Encoder/Decoder</h1>
+    </div>
+    <div class="flex-container">
+
+      <textarea class="input_textarea flex-items" id="input"></textarea>
+      <div class="flex-items">
+        <button class="button_normal space" type="button" onclick="encode()">Encode</button>
+        <button class="button_normal space" type="button" onclick="decode()">Decode</button>
+      </div>
+
+      <textarea class="input_textarea flex-items" id="output"></textarea>
+    </div>
+  </main>
+
+  <script>
+    function encode() {
+      var input = document.getElementById("input").value;
+      var output = btoa(input);
+      document.getElementById("output").value = output;
+    }
+
+    function decode() {
+      var input = document.getElementById("input").value;
+      var output = atob(input);
+      document.getElementById("output").value = output;
+    }
+  </script>
+
+
+
+</body>
+
+</html>
