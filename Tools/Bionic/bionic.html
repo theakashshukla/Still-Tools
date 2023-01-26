@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bionic</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/tools.css" rel="stylesheet" type="text/css">
+  <title>Bionic</title>
 </head>
+
 <body>
-    <h1>Bionic</h1>
-    <textarea id="input"></textarea>
-    <br>
-    <button onclick="simplifyText()">Simplify</button>
-    <br>
-    <textarea id="output"></textarea>
-    
-    <script>
-      function simplifyText() {
-        var input = document.getElementById("input").value;
-        var words = input.split(" ");
-        var simplifiedWords = [];
-        for (var i = 0; i < words.length; i++) {
-          var word = words[i];
-          if (word.length <= 3) {
-            simplifiedWords.push(word);
-          } else {
-            var simplifiedWord = word[0] + (word.length - 2) + word[word.length - 1];
-            simplifiedWords.push(simplifiedWord);
-          }
+  <main class="container">
+    <div class="block__title">
+      <h1>Bionic</h1>
+    </div>
+    <div class="flex-container">
+      <textarea class="input_textarea flex-items" id="input"></textarea>
+      <button class="button_normal flex-items " onclick="simplifyText()">Simplify</button>
+      <textarea class="input_textarea flex-items" id="output"></textarea>
+    </div>
+  </main>
+  <script>
+    function simplifyText() {
+      var input = document.getElementById("input").value;
+      var words = input.split(" ");
+      var simplifiedWords = [];
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        if (word.length <= 3) {
+          simplifiedWords.push(word);
+        } else {
+          var simplifiedWord = word[0] + (word.length - 2) + word[word.length - 1];
+          simplifiedWords.push(simplifiedWord);
         }
-        var simplifiedText = simplifiedWords.join(" ");
-        document.getElementById("output").value = simplifiedText;
       }
-    </script>
-    
-    </body>
-    </html>
+      var simplifiedText = simplifiedWords.join(" ");
+      document.getElementById("output").value = simplifiedText;
+    }
+  </script>
+
+</body>
+
+</html>
