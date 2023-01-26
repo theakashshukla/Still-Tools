@@ -15,8 +15,6 @@ body {
     align-items: center;
 }
 
-
-
 .text__center {
     text-align: center;
 }
@@ -86,6 +84,7 @@ body {
 .main {
     display: flex;
     flex-flow: row wrap;
+    gap: 22px;
 }
 
 .main__card {
@@ -94,8 +93,8 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 7px rgba(139, 139, 139, 0.87);
     background-color: rgb(255, 255, 255);
-    margin: 10px;
     padding: 10px 60px 10px 25px;
+    
 }
 
 .main__card:hover {
