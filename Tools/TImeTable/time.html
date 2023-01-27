@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+
+<body>
+    <table id="timetable">
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00am-10:00am</td>
+            <td id="mon9"></td>
+            <td id="tue9"></td>
+            <td id="wed9"></td>
+            <td id="thu9"></td>
+            <td id="fri9"></td>
+        </tr>
+        <!-- add more rows for other time slots -->
+    </table>
+
+    <form>
+        <label>Teacher Name:</label>
+        <input type="text" id="teacher-name">
+        <label>Time:</label>
+        <select id="time-slot">
+            <option value="mon9">Monday 9:00am-10:00am</option>
+            <!-- add more options for other time slots -->
+        </select>
+        <button onclick="addToTimetable()">Add to Timetable</button>
+    </form>
+
+    <button onclick="generatePDF()">Generate PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script>
+        // create an array to store the teacher and time information
+var timetable = [
+  { teacher: "", time: "mon9" },
+  { teacher: "", time: "tue9" },
+  // add more objects for other time slots
+];
+
+// function to add custom teacher and time information
+function addToTimetable() {
+  var teacherName = document.getElementById("teacher-name").value;
+  var timeSlot = document.getElementById("time-slot").value;
+  // find the object in the array that matches the selected time slot
+  var timeSlotObject = timetable.find(function(slot) {
+    return slot.time === timeSlot;
+  });
+  // update the teacher property of the object
+  timeSlotObject.teacher = teacherName;
+  // save the updated array in local storage
+  localStorage.setItem("timetable", JSON.stringify(timetable));
+  // update the table to reflect the changes
+  updateTimetable();
+}
+
+// function to update the table
+function updateTimetable() {
+  timetable.forEach(function(slot) {
+    var cell = document.getElementById(slot.time);
+    cell.innerHTML = slot.teacher;
+  });
+}
+
+// check if there is any data in local storage and update the table
+if (localStorage.getItem("timetable")) {
+  timetable = JSON.parse(localStorage.getItem("timetable"));
+  updateTimetable();
+}
+// function to add custom teacher and time information
+function addToTimetable() {
+  var teacherName = document.getElementById("teacher-name").value;
+  var timeSlot = document.getElementById("time-slot").value;
+  // find the object in the array that matches the selected time slot
+  var timeSlotObject = timetable.find(function(slot) {
+    return slot.time === timeSlot;
+  });
+  // update the teacher property of the object
+  timeSlotObject.teacher = teacherName;
+  // check if the selected time slot is for Monday
+  if (timeSlot.startsWith("mon")) {
+    // save the updated array in local storage
+    localStorage.setItem("timetable", JSON.stringify(timetable));
+  }
+  // update the table to reflect the changes
+  updateTimetable();
+}
+
+// check if the selected time slot is for Monday
+if (new Date(timeSlot).getDay() === 1) {
+    // save the updated array in local storage
+    localStorage.setItem("timetable", JSON.stringify(timetable));
+  }
+
+    </script>
+</body>
+
+</html>
