@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/tools.css" rel="stylesheet" type="text/css">
+  <script src="/src/function.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+  <title>MarkDown Creator</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="block__title">
+      <h2>Markdown Creator</h2>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-items">
+        <label for="output">Preview</label>
+        <div class="font_md_preview" id="output"></div>
+      </div>
+      <button class="button_normal flex-items" type="button" onclick="copyInput()">Copy to Clipboard</button>
+      <label for="input">Markdown</label>
+      <textarea class="input_textarea" id="input" oninput="convert()"></textarea>
+    </div>
+  </main>
+  <script>
+    var converter = new showdown.Converter();
+
+    function convert() {
+      var input = document.getElementById("input").value;
+      var output = converter.makeHtml(input);
+      document.getElementById("output").innerHTML = output;
+    }
+
+    function copyInput() {
+      var input = document.getElementById("input").value;
+      var textArea = document.createElement("textarea");
+      textArea.value = input;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      alert("Input copied to clipboard.");
+      textArea.remove();
+    }
+  </script>
+</body>
+
+</html>
