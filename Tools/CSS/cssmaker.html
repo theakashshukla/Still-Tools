@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style id="style-tag"></style>
+    <title>Document</title>
+</head>
+<body>
+
+<h2>CSS Maker</h2>
+
+<form>
+  <label for="input">CSS:</label>
+  <textarea id="input"></textarea>
+  <br>
+  <button type="button" onclick="applyCSS()">Test CSS</button>
+  <button type="button" onclick="copyCSS()">Copy to Clipboard</button>
+  <br>
+  <label for="preview">Preview:</label>
+  <div id="preview" style="border: 1px solid black;"></div>
+</form>
+
+<script>
+function applyCSS() {
+  var input = document.getElementById("input").value;
+  document.getElementById("style-tag").innerHTML = input;
+}
+
+function copyCSS() {
+  var input = document.getElementById("input").value;
+  var textArea = document.createElement("textarea");
+  textArea.value = input;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  alert("CSS copied to clipboard.");
+  textArea.remove();
+}
+</script>
+
+</body>
+</html> -->
