@@ -101,27 +101,8 @@ function NumToWord(inputNumber, outputControl) {
   document.getElementById(outputControl).innerHTML = finalOutput;
 }
 
-// Count Words
-function countWords(str) {
-  var count = 0;
-  words = str.split(" ");
-  for (i = 0; i < words.length; i++) {
-
-    if (words[i] != "")
-      count += 1;
-  }
-  document.theForm.results.value = "There are " + count + " words in the text string you entered!";
-}
-function countLines() {
-  var area = document.getElementById("texta");
-  var text = area.value.replace(/\s+$/g, "");
-  var split = text.split("\n");
-  return split.length;
-}
-function countit(what) {
-  formcontent = what.form.inStr.value
-  what.form.displaycount.value = formcontent.length
-}
+// -----------Count Words---------
+// This function still in count.html
 
 // Css
 // Hash
@@ -147,25 +128,9 @@ function copyOutput() {
   document.execCommand("copy");
   alert("Output copied to clipboard.");
 }
-// Markdown
-var converter = new showdown.Converter();
+// -------------Markdown--------------
+// This function still in markdown.html
 
-function convert() {
-  var input = document.getElementById("input").value;
-  var output = converter.makeHtml(input);
-  document.getElementById("output").innerHTML = output;
-}
-
-function copyInput() {
-  var input = document.getElementById("input").value;
-  var textArea = document.createElement("textarea");
-  textArea.value = input;
-  document.body.appendChild(textArea);
-  textArea.select();
-  document.execCommand("copy");
-  alert("Input copied to clipboard.");
-  textArea.remove();
-}
 // Password
 function generatePassword() {
   // get user input
@@ -210,7 +175,7 @@ function generatePassword() {
   // display the final password
   document.getElementById("password").value = finalPassword;
 }
-// Srtring 1
+// -------------------------------Srtring 1------------------------------
 function removeEmptyLines() {
   var input = document.getElementById("input").value;
   var inputLines = input.split("\n");
@@ -225,13 +190,14 @@ function removeEmptyLines() {
   document.getElementById("removed-chars").innerHTML = removedChars;
 }
 
-// Srtring 2
+// --------------------------Srtring 2-------------------------
 function removeExtraSpaces() {
   var input = document.getElementById("input").value;
   var output = input.replace(/ +/g, " ");
   document.getElementById("output").value = output;
 }
-// Text Editor
+
+//--------------Text Editor-------------------------------
 var quill = new Quill('#editor', {
   modules: {
       toolbar: [
