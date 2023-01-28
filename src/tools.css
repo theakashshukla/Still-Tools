@@ -13,10 +13,28 @@ a:link {
     text-decoration: none;
     color: rgb(255, 87, 87);
 }
-.cust_width{
-    width: 50%;
-}
 
+@media only screen and (min-width: 680px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+    }
+    .container{
+        width: 520px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    
+}
+@media only screen and (max-width: 680px) {
+    h1{
+        font-size: 24px;
+    }
+}
 /* ---------------Button----------------- */
 .button_normal {
     font-size: 12px;
@@ -53,7 +71,7 @@ a:link {
     border: 2px solid rgb(187, 194, 255);
     outline-color: rgb(140, 140, 255);
     border-radius: 8px;
-    background-color: rgb(241, 241, 255);
+    background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -64,7 +82,7 @@ a:link {
     border: 2px solid rgb(187, 194, 255);
     outline-color: rgb(140, 140, 255);
     border-radius: 8px;
-    background-color: rgb(241, 241, 255);
+    background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -119,11 +137,17 @@ a:link {
     text-align: center;
 }
 
-/*-------------------Nav Bar-------------------------*/
+.cust_width{
+    width: 90%;
+}
 .space {
+    margin: 4px;
     margin-bottom: 4px;
     margin-top: 4px;
 }
+
+/*-------------------Nav Bar-------------------------*/
+
 
 .nav {
     flex-flow: row wrap;
