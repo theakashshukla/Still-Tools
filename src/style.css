@@ -8,6 +8,7 @@ body {
 .flex{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .text__center {
@@ -22,23 +23,22 @@ body {
 }
 /*-------------------Nav Bar-------------------------*/
 .container__nav{
-    padding: 10px;
+    padding: 5px;
 }
 
 .nav { 
     flex-flow: row wrap;
     /* background-color: aliceblue;
-    border-radius: 20px; */
-    justify-content: space-between;
+    border-radius: 20px;
+    justify-content: space-between; */
 }
 
 .nav__logo {
-    margin-left: 40px;
     justify-items: center;
 }
 .logo{
     margin-top: 12px;
-    width: 80px;
+    width: 100px;
 }
 .nav__menu {
     justify-content: end;
