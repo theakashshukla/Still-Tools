@@ -7,27 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/tools.css" rel="stylesheet" type="text/css">
   <script src="/src/function.js" type="text/javascript"></script>
-   
-  <title>URL Encoder/Decoder</title>
+  <!-- add font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>URL Encoder</title>
 </head>
 
 <body>
+  <main class="container">
+    <div class="block__title">
+      <h1>URL Encoder</h1>
+    </div>
 
-  <h2>URL Encoder/Decoder</h2>
+    <div class="flex-container">
 
-  <form>
-    <div>
-    <label for="input">Input:</label>
-    <textarea id="input"></textarea>
-  </div>
-  
-    <button type="button" onclick="encodeUrl()">Encode</button>
-    <br>
-    <label for="output">Output:</label>
-    <textarea id="output"></textarea>
-    <br>
-    <button type="button" onclick="copyOutput()">Copy to Clipboard</button>
-  </form>
+      <textarea class="input_textarea flex-items" id="input" placeholder="URL"></textarea>'
+      <div class="flex-items">
+        <button class="button_normal" type="button" onclick="copyOutput()">Copy to Clipboard</button>
+        <button class="button_normal" type="button" onclick="encodeUrl()">Encode</button>
+      </div>
+      <textarea class="input_textarea flex-items" id="output" placeholder="Encoded URL"></textarea>
+
+    </div>
+  </main>
 
 
 </body>
