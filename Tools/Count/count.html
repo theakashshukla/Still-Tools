@@ -5,40 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/tools.css" rel="stylesheet" type="text/css">
+    <script src="/src/function.js" type="text/javascript"></script>
+    <!-- add font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <title>
         Count Numbers of Char & Lines
     </title>
-    <script src="src.js" type="text/javascript"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div>
-        <h1>
-            Count Total Numbers of Words, Characters and Lines.
-        </h1>
-        <div>
-            <form name="theForm">
-                <!-- <label>
-                Enter a text string
-            </label> -->
-                <textarea name="inStr" placeholder="Enter Paragraph..." class="txtarea" id="texta" rows="5"
-                    cols="15"></textarea>
-
-                <input type="button" class="buttoncal" value="Count Words"
-                    onClick="countWords(document.theForm.inStr.value)" ;>
-                <input type="button" class="buttoncal" name="theButton" value="Clear Results"
-                    onClick='document.theForm.results.value=""' ;>
-
-                <textarea name="results" class="txtarea" rows=5 cols=90></textarea>
-                <input type="button" class="buttoncal" value="Calculate Characters" onClick="countit(this)">
-                <input type="text" class="inputres" name="displaycount" size="20"></p>
-
-                <br>
-                <button class="buttoncal" onclick="alert(countLines())">Count Lines</button>
-            </form>
+    <main class="container">
+        <div class="block__title">
+            <h1>
+                Count Numbers of Char & Lines
+            </h1>
         </div>
-    </div>
+        <div class="flex-container">
+
+            <textarea class="input_textarea flex-items" id="textArea"></textarea>
+            <button class=" flex-items button_normal" id="clearBtn">Clear</button>
+            <div class="flex-items">
+                <div id="charCount"></div>
+                <div id="wordCount"></div>
+                <div id="lineCount"></div>
+                <div id="spaceCount"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("textArea").addEventListener("input", count);
+        document.getElementById("textArea").addEventListener("keyup", count);
+
+        function count() {
+            var text = document.getElementById("textArea").value;
+            var charCount = text.length;
+            var wordCount = text.split(/\s+/g).length;
+            var lineCount = text.split(/\r\n|\r|\n/g).length;
+            var spaceCount = (text.match(/\s/g) || []).length;
+            document.getElementById("charCount").innerHTML = "Character: " + charCount;
+            document.getElementById("wordCount").innerHTML = "Word: " + wordCount;
+            document.getElementById("lineCount").innerHTML = "Line: " + lineCount;
+            document.getElementById("spaceCount").innerHTML = "Spaces: " + spaceCount;
+        }
+        document.getElementById("clearBtn").addEventListener("click", function () {
+            document.getElementById("textArea").value = "";
+        });
+    </script>
 </body>
 
 </html>
