@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/tools.css" rel="stylesheet" type="text/css">
+  <script src="/src/function.js" type="text/javascript"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Bionic</title>
 </head>
 
@@ -16,29 +21,13 @@
     </div>
     <div class="flex-container">
       <textarea class="input_textarea flex-items" id="input"></textarea>
-      <button class="button_normal flex-items " onclick="simplifyText()">Simplify</button>
+      <div class="flex-items">
+        <button class="button_normal space" type="button" onclick="">Copy</button>
+        <button class="button_normal" onclick="simplifyText()">Simplify</button>
+      </div>
       <textarea class="input_textarea flex-items" id="output"></textarea>
     </div>
   </main>
-  <script>
-    function simplifyText() {
-      var input = document.getElementById("input").value;
-      var words = input.split(" ");
-      var simplifiedWords = [];
-      for (var i = 0; i < words.length; i++) {
-        var word = words[i];
-        if (word.length <= 3) {
-          simplifiedWords.push(word);
-        } else {
-          var simplifiedWord = word[0] + (word.length - 2) + word[word.length - 1];
-          simplifiedWords.push(simplifiedWord);
-        }
-      }
-      var simplifiedText = simplifiedWords.join(" ");
-      document.getElementById("output").value = simplifiedText;
-    }
-  </script>
-
 </body>
 
 </html>
