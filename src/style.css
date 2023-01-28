@@ -1,9 +1,4 @@
 /*-------------------All Tags-------------------------*/
-a:link {
-    text-decoration: none;
-    color: rgb(255, 87, 87);
-}
-
 body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
@@ -17,6 +12,13 @@ body {
 
 .text__center {
     text-align: center;
+}
+.link_custom{
+    text-decoration: none;
+}
+.link_a {
+    text-decoration: none;
+    color: rgb(255, 87, 87);
 }
 /*-------------------Nav Bar-------------------------*/
 .container__nav{
@@ -104,6 +106,7 @@ body {
 
 .main__card__title {
     color: rgb(32, 32, 32);
+    font-size: 14px;
 }
 
 /* .main__card__logo {} */
