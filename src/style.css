@@ -94,15 +94,17 @@ body {
     flex: 1 150px;
     border: 2px solid rgb(176, 184, 255);
     border-radius: 10px;
-    box-shadow: 3px 3px 7px rgba(139, 139, 139, 0.87);
+    box-shadow: 4px 4px rgb(176, 184, 255);
     background-color: rgb(255, 255, 255);
     padding: 10px 60px 10px 25px;
-    
+    cursor: pointer;
 }
 
-.main__card:hover {
-    box-shadow: 6px 6px 1px rgb(20, 20, 20);
-    cursor: pointer;
+.main__card:active {
+    /* box-shadow: 6px 6px 1px rgb(20, 20, 20);
+    cursor: pointer; */
+    box-shadow: none;
+    transform: translate(3px, 3px);
 }
 
 .main__card__title {
