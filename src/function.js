@@ -132,49 +132,7 @@ function copyOutput() {
 // This function still in markdown.html
 
 // Password
-function generatePassword() {
-  // get user input
-  var length = document.getElementById("length").value;
-  var custom = document.getElementById("custom").value;
-  var lowercase = document.getElementById("lowercase").checked;
-  var uppercase = document.getElementById("uppercase").checked;
-  var numbers = document.getElementById("numbers").checked;
-  var special = document.getElementById("special").checked;
 
-  // create variables for different character sets
-  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
-  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var numberChars = "0123456789";
-  var specialChars = "!@#$%^&*()-_=+[]{}|;':\"<>,.?/\\";
-
-  // create an empty string to store the password
-  var password = "";
-
-  // check which character sets the user wants to include
-  if (lowercase) {
-      password += lowercaseChars;
-  }
-  if (uppercase) {
-      password += uppercaseChars;
-  }
-  if (numbers) {
-      password += numberChars;
-  }
-  if (special) {
-      password += specialChars;
-  }
-
-  // create an empty string to store the final password
-  var finalPassword = custom;
-
-  // generate the final password by randomly selecting characters from the password string
-  for (var i = 0; i < length - custom.length; i++) {
-      finalPassword += password.charAt(Math.floor(Math.random() * password.length));
-  }
-
-  // display the final password
-  document.getElementById("password").value = finalPassword;
-}
 // -------------------------------Srtring 1------------------------------
 function removeEmptyLines() {
   var input = document.getElementById("input").value;
