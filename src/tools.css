@@ -42,17 +42,16 @@ a:link {
     border-radius: 8px;
     border: 2px solid rgb(176, 184, 255);
     background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px rgb(176, 184, 255);
     text-transform: uppercase;
     line-height: 1.5;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
-.button_normal:hover {
-    border: 2px solid rgb(173, 173, 173);
-    box-shadow: 3px 3px 1px rgba(36, 36, 36, 0.87);
-    color: #d4deff;
-    background: #7b33ff;
-    cursor: pointer;
+.button_normal:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
 }
 
 .input_option {}
