@@ -91,40 +91,6 @@ a:link {
 
 /*-------------------Testing-------------------------*/
 
-/* .inputres,
-.txtarea {
-    width: 100%;
-    margin: 20px;
-    padding: 10px 10px;
-    border: hsl(0, 100%, 100%);
-    background-color: rgb(242, 242, 255);
-    outline-color: #666bff;
-    border-radius: 4px;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-} */
-/* .txtarea{
-    width: 50%;
-    margin-top: 20px;
-    padding: 10px;
-    border: hsl(0, 100%, 100%);
-    background-color: rgb(242, 242, 255);
-    outline-color: rgb(143, 143, 255);
-    border-radius: 4px;
-    box-sizing: border-box;
-} */
-
-/* .txtarea {
-    background-color: #222c8b;
-    color: white;
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-} */
-
 
 /*-------------------Generate by Intension-------------------------*/
 .flex {
@@ -172,17 +138,6 @@ a:link {
 }
 
 
-/*-------------------Header-------------------------*/
-
-/* .container__header {
-    display: flex;
-    justify-content: center;
-}
-
-.header {
-    text-align: center;
-} */
-
 /*-------------------Body Tools Comp.-------------------------*/
 .container {
     background-color: rgb(235, 239, 255);
@@ -222,8 +177,9 @@ a:link {
     color: rgb(32, 32, 32);
 }
 
-/* .main__card__logo {} */
 
+
+/*-------------------- Box Manage---------------------- */
 
 .flex-container {
     padding: 20px;
