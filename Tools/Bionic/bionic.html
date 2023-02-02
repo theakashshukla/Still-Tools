@@ -28,6 +28,24 @@
       <textarea class="input_textarea flex-items" id="output"></textarea>
     </div>
   </main>
+  <script>
+    function simplifyText() {
+      var input = document.getElementById("input").value;
+      var words = input.split(" ");
+      var simplifiedWords = [];
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        if (word.length <= 3) {
+          simplifiedWords.push(word);
+        } else {
+          var simplifiedWord = word[0] + (word.length - 2) + word[word.length - 1];
+          simplifiedWords.push(simplifiedWord);
+        }
+      }
+      var simplifiedText = simplifiedWords.join(" ");
+      document.getElementById("output").value = simplifiedText;
+    }
+    </script>
 </body>
 
 </html>

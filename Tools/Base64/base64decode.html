@@ -21,16 +21,29 @@
     </div>
     <div class="flex-container">
 
-      <textarea class="input_textarea flex-items" id="input" placeholder="Encode"></textarea>
+      <textarea class="input_textarea flex-items" id="input" placeholder="Encoded Text"></textarea>
 
       <div class="flex-items">
-        <button class="button_normal space" type="button" onclick="">Copy</button>
+        <button class="button_normal space" type="button" onclick="copyOutput()">Copy</button>
         <button class="button_normal space" type="button" onclick="decode()">Decode</button>
       </div>
 
-      <textarea class="input_textarea flex-items" id="output" placeholder="Text"></textarea>
+      <textarea class="input_textarea flex-items" id="output" placeholder="Output"></textarea>
     </div>
   </main>
+  <script>
+    function decode() {
+      var input = document.getElementById("input").value;
+      var output = atob(input);
+      document.getElementById("output").value = output;
+    }
+    function copyOutput() {
+      var output = document.getElementById("output");
+      output.select();
+      document.execCommand("copy");
+      alert("Output copied to clipboard.");
+    }
+  </script>
 </body>
 
 </html>

@@ -17,17 +17,32 @@
     </div>
     <div class="flex-container">
 
-      <textarea class="input_textarea flex-items" id="input" placeholder="Decode"></textarea>
+      <textarea class="input_textarea flex-items" id="input" placeholder="Simple Text..."></textarea>
 
       <div class="flex-items">
-        <button class="button_normal space" type="button" onclick="">Copy</button>
+        <button class="button_normal space" type="button" onclick="copyOutput()">Copy</button>
         <button class="button_normal space" type="button" onclick="encode()">Encode</button>
-      
+
       </div>
 
-      <textarea class="input_textarea flex-items" id="output" placeholder="Encode"></textarea>
+      <textarea class="input_textarea flex-items" id="output" placeholder="Output"></textarea>
     </div>
   </main>
+  <script>
+    function encode() {
+      var input = document.getElementById("input").value;
+      var output = btoa(input);
+      document.getElementById("output").value = output;
+    }
+
+    function copyOutput() {
+      var output = document.getElementById("output");
+      output.select();
+      document.execCommand("copy");
+      alert("Output copied to clipboard.");
+    }
+
+  </script>
 </body>
 
 </html>

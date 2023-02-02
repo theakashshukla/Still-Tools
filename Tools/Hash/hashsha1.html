@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/tools.css" rel="stylesheet" type="text/css">
   <script src="/src/function.js" type="text/javascript"></script>
+  <!-- add font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <title>Hash Generator</title>
 </head>
@@ -15,32 +19,34 @@
 
   <main class="container">
     <div class="block__title">
-      <h1>URL Encoder</h1>
+      <h1>Hash SHA-1</h1>
     </div>
 
     <div class="flex-container">
       <textarea class="input_textarea flex-items" id="input"></textarea>
-     
-      <select class="button_normal" id="type" onchange="generateHash()">
-        <option value="md5" selected>MD5</option>
-        <option value="sha1">SHA-1</option>
-        <option value="sha256">SHA-256</option>
-        <option value="sha512">SHA-512</option>
-      </select>
-
+      <div class="flex-items">
+        <button class="button_normal space" type="button" onclick="copyOutput()">Copy</button>
+        <button class="button_normal space" id="type" onclick="generateHash()">Convert</button>
+      </div>
       <textarea class="input_textarea flex-items" id="output"></textarea>
-      <br>
-      <button class="button_normal flex-items" type="button" onclick="copyOutput()">Copy to Clipboard</button>
     </div>
   </main>
 
   <script>
+    function generateHash() {
+      var input = document.getElementById("input").value;
+      var hash = CryptoJS.SHA1(input).toString();
 
+      document.getElementById("output").value = hash;
+    }
+    function copyOutput() {
+      var output = document.getElementById("output");
+      output.select();
+      document.execCommand("copy");
+      alert("Output copied to clipboard.");
+    }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha512.js"></script>
 
 </body>
 

@@ -54,39 +54,23 @@ a:link {
     transform: translate(3px, 3px);
 }
 
-.input_option {}
+.input_text, .input_textarea {
 
-.input_text {
-    padding: 8px;
     font-size: 16px;
-    color: #00021c;
-    border-style: solid;
-    border-radius: 8px;
-    box-shadow: -50px 0px 0px rgba(66, 66, 66, .0);
-    text-shadow: -50px 0px 0px rgba(66, 66, 66, .0);
-
     padding: 12px 12px;
     font-size: 16px;
+    border-radius: 8px;
     border: 2px solid rgb(187, 194, 255);
     outline-color: rgb(140, 140, 255);
-    border-radius: 8px;
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+}
+.input_text:hover, .input_textarea:hover {
+    box-shadow: 6px 6px 1px rgb(44, 44, 44);
 }
 
 .input_textarea {
     height: 170px;
-    padding: 12px 12px;
-    font-size: 16px;
-    border: 2px solid rgb(187, 194, 255);
-    outline-color: rgb(140, 140, 255);
-    border-radius: 8px;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.input_textarea:hover {
-    box-shadow: 6px 6px 1px rgb(44, 44, 44);
 }
 
 /*-------------------Testing-------------------------*/
@@ -111,31 +95,7 @@ a:link {
     margin-top: 4px;
 }
 
-/*-------------------Nav Bar-------------------------*/
 
-
-.nav {
-    flex-flow: row wrap;
-    /* background-color: aliceblue;
-    border-radius: 20px; */
-    justify-content: space-between;
-}
-
-.nav__logo {
-    margin-left: 40px;
-    justify-items: center;
-}
-
-.logo {
-    margin-top: 12px;
-    width: 80px;
-}
-
-.nav__menu {
-    justify-content: end;
-    gap: 40px;
-    margin-right: 40px;
-}
 
 
 /*-------------------Body Tools Comp.-------------------------*/

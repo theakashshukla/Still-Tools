@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/tools.css" rel="stylesheet" type="text/css">
     <script src="/src/function.js" type="text/javascript"></script>
+    <!-- add font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Convert Numbers into Words</title>
 </head>
 
@@ -17,20 +21,66 @@
                 Convert Numbers to Words
             </h1>
         </div>
-
         <div class="flex-container">
-            <input class="input_text flex-items" id="Text1" type="text" placeholder="Enter Digits.."
-                onkeypress="return onlyNumbers(this.value);" onkeyup="NumToWord(this.value,'divDisplayWords');"
-                maxlength="4" />
+            <input class="input_text flex-items" type="text" id="inputNumber" placeholder="Enter Numbers....">
+
             <div class="flex-items">
-                <div class="space" id="divDisplayWords"></div>
+                <p class="space word_convert" id="result"></p>
                 <button class="button_normal space" type="button" onclick="">Copy</button>
+                <button class="button_normal space" id="convertButton">Convert</button>
             </div>
         </div>
     </div>
 
-    
-        
+    <script>
+
+        function numberToWord(number) {
+            var ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+            var tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+            var scales = ["", "thousand", "million", "billion", "trillion"];
+
+            if (number < 20) {
+                return ones[number];
+            } else if (number < 100) {
+                return tens[Math.floor(number / 10)] + (number % 10 !== 0 ? "-" + ones[number % 10] : "");
+            } else {
+                var word = "";
+                var scale = 0;
+
+                while (number > 0) {
+                    var chunk = number % 1000;
+                    if (chunk > 0) {
+                        var chunkWord = "";
+                        if (chunk < 20) {
+                            chunkWord = ones[chunk];
+                        } else if (chunk < 100) {
+                            chunkWord = tens[Math.floor(chunk / 10)] + (chunk % 10 !== 0 ? "-" + ones[chunk % 10] : "");
+                        } else {
+                            chunkWord = ones[Math.floor(chunk / 100)] + " hundred";
+                            if (chunk % 100 !== 0) {
+                                chunkWord += " and " + numberToWord(chunk % 100);
+                            }
+                        }
+                        word = chunkWord + " " + scales[scale] + " " + word;
+                    }
+                    scale++;
+                    number = Math.floor(number / 1000);
+                }
+
+                return word.trim();
+            }
+        }
+
+
+        var convertButton = document.getElementById("convertButton");
+        convertButton.addEventListener("click", function () {
+            var inputNumber = document.getElementById("inputNumber").value;
+            var result = numberToWord(inputNumber);
+            document.getElementById("result").innerHTML = result;
+        });
+    </script>
+
+
 </body>
 
 </html>
