@@ -10,7 +10,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .text__center {
     text-align: center;
 }
@@ -92,16 +91,17 @@ body {
 .main {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     gap: 22px;
 }
 
 .main__card {
     flex: 1 150px;
     border: 2px solid rgb(176, 184, 255);
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 4px 4px rgb(176, 184, 255);
     background-color: rgb(255, 255, 255);
-    padding: 10px 60px 10px 25px;
+    padding: 10px 30px;
     cursor: pointer;
 }
 
@@ -114,28 +114,24 @@ body {
 
 .main__card__title {
     color: rgb(32, 32, 32);
-    font-size: 14px;
+    font-size: 16px !important;
 }
 
 /* .main__card__logo {} */
 
 .product_hunt{
     margin: 15px;
-    
 }
 
-@media only screen and (min-width: 280px){
+@media only screen and (max-width: 480px){
     .block__title{
-        font-size: 18px;
+        font-size: 16px;
     }
     .header__description{
-        font-size: px;
+        font-size: 13px;
     }
     .main__card__title {
-        font-size: 14px;
-    }
-    .main__card {
-        flex: 1 100px;
+        font-size: 12px !important;
     }
 }
 
