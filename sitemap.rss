@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>-</title>
+    <link>https://still-tools.vercel.app/Tools/Text/texteditor.html</link>
+    <description />
+    <item>
+      <guid>https://still-tools.vercel.app</guid>
+      <link>https://still-tools.vercel.app</link>
+      <title>Still a Tool Universe</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/URL/urlencode.html</guid>
+      <link>https://still-tools.vercel.app/Tools/URL/urlencode.html</link>
+      <title>URL Encoder</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/URL/urldecode.html</guid>
+      <link>https://still-tools.vercel.app/Tools/URL/urldecode.html</link>
+      <title>URL Decoder</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Hash/hashsha512.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Hash/hashsha512.html</link>
+      <title>Hash Generator</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Hash/hashsha256.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Hash/hashsha256.html</link>
+      <title>Hash Generator</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Hash/hashsha1.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Hash/hashsha1.html</link>
+      <title>Hash Generator</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Hash/hashmd5.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Hash/hashmd5.html</link>
+      <title>Hash Generator</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Base64/base64encode.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Base64/base64encode.html</link>
+      <title>Base64</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Base64/base64decode.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Base64/base64decode.html</link>
+      <title>Base64</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Bionic/bionic.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Bionic/bionic.html</link>
+      <title>Bionic</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Password/passwordencryption.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Password/passwordencryption.html</link>
+      <title>Convert numbers to words using JavaScript</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Password/password.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Password/password.html</link>
+      <title>Password Generator</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Convert/word.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Convert/word.html</link>
+      <title>Convert Numbers into Words</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/String/spaceremover.html</guid>
+      <link>https://still-tools.vercel.app/Tools/String/spaceremover.html</link>
+      <title>Space Remover</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/String/emptylineremover.html</guid>
+      <link>https://still-tools.vercel.app/Tools/String/emptylineremover.html</link>
+      <title>Empty Line Remover</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Count/count.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Count/count.html</link>
+      <title>
+        Count Numbers of Char &amp; Lines
+    </title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/MarkDown/md.html</guid>
+      <link>https://still-tools.vercel.app/Tools/MarkDown/md.html</link>
+      <title>MarkDown Creator</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/Tools/Text/texteditor.html</guid>
+      <link>https://still-tools.vercel.app/Tools/Text/texteditor.html</link>
+      <title>Text Editor with Sharable Link</title>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://still-tools.vercel.app/src/stl.png</guid>
+      <link>https://still-tools.vercel.app/src/stl.png</link>
+      <description />
+      <pubDate>Thu, 23 Feb 2023 07:48:27 Z</pubDate>
+    </item>
+  </channel>
+</rss>
