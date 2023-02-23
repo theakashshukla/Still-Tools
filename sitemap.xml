@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://still-tools.vercel.app/</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Text/texteditor.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/MarkDown/md.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Count/count.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/String/emptylineremover.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/String/spaceremover.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Convert/word.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Password/password.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Password/passwordencryption.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Bionic/bionic.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Base64/base64decode.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Base64/base64encode.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Hash/hashmd5.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Hash/hashsha1.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Hash/hashsha256.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/Hash/hashsha512.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/URL/urldecode.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://still-tools.vercel.app/Tools/URL/urlencode.html</loc>
+	<lastmod>2023-02-23T21:37:55+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+</urlset>
